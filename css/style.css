@@ -1,44 +1,60 @@
-
-.light-mode {
-    background-color: #d5e2ee; /* Fondo en modo claro */
-    color: #000; /* Color del texto en modo claro */
+.logo{
+    height: 90px;
+    width: 90px;
 }
 
-/* Estilos para el modo oscuro */
-.dark-mode {
-    background-color: #15202B; /* Fondo en modo oscuro */
-    color: #747272; /* Color del texto en modo oscuro */
-}
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .navbar-light-mode{
+    background-color: #899fb4;
+  }
+  .light-mode {
+    background-color: #d5e2ee;
+    color: #000;
+  }
+  
+  .dark-mode {
+    background-color: #15202B;
+    color: #747272;
+  }
 
-.dark-navbar {
-    background-color: #f8f9fa !important; /* Fondo del navbar en modo oscuro */
-    color: #000 !important; /* Color del texto en modo oscuro */
-}
+  .dark-mode .card {
+    background-color: #1a1a1a; /* Fondo oscuro */
+    color: #d4d4d4; /* Texto claro en modo oscuro */
+    /* Otros estilos para modo oscuro */
+  }
+  
+  .light-mode .card {
+    background-color: rgb(91, 106, 150); /* Fondo claro */
+    color: #333; /* Texto oscuro en modo claro */
+    /* Otros estilos para modo claro */
+  }
+  
+  .titulo-carta,
+  .numero-carta,
+  .personaje {
+    color: inherit; /* Usa el color heredado del padre (definido en .card) */
+  }
 
-.light-navbar {
-    background-color: #212529 !important; /* Fondo del navbar en modo claro */
-    color: #fff !important; /* Color del texto en modo claro */
-}
-
+  #searchInput {
+    width: 200px; /* Ajusta el ancho según sea necesario */
+  }
+/* Contenedor de productos */
 #container-dbz {
     display: grid;
     grid-template-columns: repeat(1, minmax(300px, 1fr));
     gap: 20px;
 }
 
+.card.oculta {
+    display: none;
+  }
 
-.navbar-nav .show {
-    position: absolute;
-    top: 60px;
-    left: -300px;
-    background: #fff;
-    padding: 10px;
-    transition: all 0.3s ease;
-}
-.navbar-nav .show.show {
-    left: 0;
-}
-
+.card .personaje {
+    display: none;
+  }
 
 /*boton de la nave*/
 @keyframes pendulum {
@@ -50,20 +66,8 @@
     }
 }
 
-@keyframes moveUp {
-    0% {
-        bottom: -107px; /* Inicia fuera de la pantalla */
-    }
-    50% {
-        bottom: 50px; /* Retraso para comenzar a subir */
-    }
-    100% {
-        bottom: 120px; /* Alcanza la posición deseada */
-    }
-}
-
 #page-top a {
-    bottom: -107px;
+    bottom: -10px;
     pointer-events: auto;
     display: block;
     width: 109px;
@@ -76,7 +80,6 @@
     background-position: center center;
     background-repeat: no-repeat;
     transform-origin: bottom;
-    animation: moveUp 1.5s ease-in-out forwards;
 }
 
 #page-top {
@@ -181,7 +184,7 @@ div .card {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
     cursor: pointer;
 }
-.titulo-carta{
+.titulo-carta , .numero-carta{
     color: white;
 }
 .container-img{
@@ -193,6 +196,7 @@ div .card {
 
 .boton-precio {
     display: flex;
+    justify-content: center; /* Centra horizontalmente */
     padding: 10px 20px;
     border: 2px solid #3b3e86;
     background-color: #212529;
@@ -201,8 +205,6 @@ div .card {
     cursor: pointer;
     transition: 1s, color 0.3s, transform 0.3s;
     border-radius: 10px;
-    align-items: baseline;
-    
 }
 
 .boton-precio ::before,
@@ -327,7 +329,7 @@ div .card {
 }
 
 .icon-close:hover{
-    stroke: red;
+    stroke: rgb(0, 255, 166)(82, 70, 70);
     cursor: pointer;
 }
 
@@ -430,4 +432,87 @@ div .card {
   
   .add-product:hover, .remove-product:hover {
     background-color: #aaa; /* Cambio de color al pasar el cursor */
+  }
+  .btn-pagar {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-pagar:hover {
+    background-color: #218838;
+  }
+
+
+/* Estilo para el modal */
+#formTarjeta, #modalTarjeta .modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+  }
+  
+  #formTarjeta label {
+    margin-bottom: 10px;
+  }
+  
+  #formTarjeta input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #formTarjeta button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Estilos para el botón/cruz de cierre */
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* Estilos para el modal */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }

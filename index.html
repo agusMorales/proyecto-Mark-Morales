@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -8,19 +8,21 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="shortcut icon" href="img/goku.png" type="image/x-icon">
+
+    <title>Cartas Coleccionables</title>
 
 </head>
 
-<body>
+<body class="light-mode">
     <div id="top">
-    
-        <nav class="navbar navbar-expand-lg light-navbar">
+
+        <nav class="navbar navbar-expand-lg navbar-light-mode">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <a class="navbar-brand" href="#"><img class="logo" src="https://es.dragon-ball-official.com/static/common/team/es/team_icon_03.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -29,21 +31,27 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Productos</a>
+                            <a class="nav-link active" href="#">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <button onclick="alternarModo()" id="modoOscuro" class="nav-link">Modo Oscuro</button>
+                            <button id="cambiarModo" class="nav-link active">Modo Oscuro</button>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+        
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="searchInput" placeholder="numero de carta , personaje o titulo" oninput="buscar()">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary bg-danger text-white" type="button"
+                                onclick="resetBuscar()">Limpiar</button>
+                        </div>
+                    </div>
                     <div class="container-icon">
                         <div class="container-cart-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
-                                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
-                              </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bag"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                            </svg>
                             <div class="count-products">
                                 <span id="contador-productos">0</span>
                             </div>
@@ -62,32 +70,57 @@
                             </div>
         
                             <div class="cart-total hidden">
-                                <h3>Total:</h3>
-                                <span class="total-pagar">$200</span>
+                                <h3>Total: <span class="total-pagar">$0</span></h3>
+                                <button class="btn-pagar" onclick="realizarPago()">Pagar</button>
                             </div>
                             <p class="cart-empty">El carrito está vacío</p>
                         </div>
+                        <div id="modalTarjeta" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="cerrarModalTarjeta()">&times;</span>
+                                <h2>Ingrese los datos de la tarjeta</h2>
+                                <form id="formTarjeta">
+                                    <label for="numeroTarjeta">Número de tarjeta:</label>
+                                    <input type="text" id="numeroTarjeta" required>
+                        
+                                    <label for="nombreTitular">Nombre del titular:</label>
+                                    <input type="text" id="nombreTitular" required>
+                        
+                                    <label for="fechaExpiracion">Fecha de expiración:</label>
+                                    <input type="text" id="fechaExpiracion" placeholder="MM/AA" required>
+                        
+                                    <label for="codigoSeguridad">Código de seguridad:</label>
+                                    <input type="text" id="codigoSeguridad" required>
+                        
+                                    <button type="button" onclick="realizarPagoConTarjeta()">Pagar</button>
+                                </form>
+                            </div>
+                        </div>
+                        
+                        </form>
+                            </div>
+                          </div>
                     </div>
                 </div>
                 <div></div>
             </div>
         </nav>
-    
-    
-    </div>
-<main>
+        
 
-   
-    </div>
-    <div id="container-dbz">
 
     </div>
-    </section>
+    <main>
+
+
+        </div>
+        <div id="container-dbz">
+            
+        </div>
+        </section>
 
 
     </main>
     <!-- Contenido en la parte superior de la página -->
-    </div>
     <footer>
         <div>
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAAEHCAMAAADPmLmNAAAAzFBMVEX///8Aq+0AAAAAqu05vfH///06tO+Q1/bJ7fu35/oute+goKAZsO4Aqe2Kiop3d3cXFxdcXFzv7+/e3t5DQ0MtLS29vb3h8/y0tLQApuyqqqqSkpLX19dpaWmt5Pl+fn7Hx8fW8/xiyfQQEBBISEgcHBxSvvE6OjojIyPR0dFmwPFyyfL0/P7g8fxfX1/s7OxsbGwXue6W0vWs5PhTU1M1NTVXxvOy4PiCy/RevvKj2fXj+Ptmv/KI1vVqzvPB6/zH5vo9vu6AyfSC0/fIiCBRAAAOOUlEQVR4nO2djUPaOhDA24UKdonbdG8Ypyi6safU+bWJD58yxv//P727pIU2Sb+gvrYzp05p8/VLLpfLpTDHbbWQjlN3EzYTC1C3WIC6xQLULRagbrEAdcufB8Dgq9GiNE8DIOFPU4VQlmieDkCaDSBaGBsFXYUYYaTBwhj0L00HoH4bxE0HGPdaIMMtkgrQdRouHv7TZgAhFqBueQUAO6Vkf+2WHH4uVdFJYYA3peTd2gD761WUD/C+mQDHrwrgx9VuETn/WADg6sQgVyHA20L17F6VBfhQrA/3igB8MnXnQQhwUKwip3EA+xbgVQBc7aXLbpUAGfXsbQLwI8Oo7VQJ8FdGRecbAHzIKPdzlQAfMyo6fM0A3y2ABbAAFsAC/D8A+z8+aPLjvEUAb01JPrUI4MACWICXAzj/8uGHKh9OWgSQKhbAAlgAC2ABLEBTwiqvHeDbCwG0XoWuDtMlGdzdECCjHlnRi4fXNwTIl5cGyNpStgLAMZ3M5eVuFMA68pIAHz8VkoOfmwIcF6tovyxACWnmQXe7Ac7aDvC2lOQZy3TZK1fRSWGAhosFqFQOvh9pcn2YmaVRALvvTNM1e1oVAzA+ZfACAMcvBXD085smf7cJ4IupYAtgASoG+Gw42vtQ6kHYmgGMNvBt2wGKblEsgAV4LQCH5wZpE8DPN2eqvPkauVVtAPhqSPM+cpgtgAWwAH8owNnfmnz90UQA5/xAl/0r4xupPpYCMB76vABAimwOsGNw9b8UAlDd6ZoACkmTR+AVA7RJhXZ0P+3sjbonbjKA8U13aqImAxSS+gB2903SIoBDUynlg1v1AewZq24RwGE1AMYjwzYBvNOPYI6ur1oEsHulyu5V7mMUTQJYS+oAuLrWz+u+l4py1QxgtLo7bQIwmRsLEJO/2gSQJRbAAliAugEOP+fLzrkpZ0MAjI/5qpK+c3rlAF+rATg6N31mz1KOqwEw9kw1ADmT+20lALv7pshxiwBKyisC2G87wIuPwMFaT+42CMBofVLlOgIw3awHYL2n1w+/GkLVn+sCOPurkPx9Fnt6fc/wFiRj/CcBEMu1ei51c4AvmQvlUtZ7B0cC4Hh5xvDmehku2hzge7GmrPceGgVgKUfL8doc4EXfBGQBXg/AufGMRsjBXhsAjgynkAkL33SAaj5nrkaAaj7hyQI0GyD2uEJTAM6PvmsiPo7HCHBw/S6U67cVuhKbAKR+IJIRwCgWwAJYAAtgAf5wgGP9CYr4wxSfGw/w89rwDMvqYZaPjQfIlyYD7BeIOL1PfwS/foDdrI9aT3y2e0MBNpTmA+y/0+V4dezafICd7AIsQIsA1gurNAhgzRE4M7x7sk0jcGU6Xy7zoRrVAex8/JIm3w5SATaW6gCq+V9QagTIFQtgAWo55Ps/AL58Osn/9Lp1j1n/D4ASYgGqByjV/uXDHg0CSD+bNMlJ8wDqFgtQtxgBVu/GyQTwamz3Ug4PDFMt9Me93BHw6hczlriB9/wcFWrEIJjFEz8ZI3A6226+zGg6AKXw3WAJW+emAjAG19wS//H9ywg2wiWJlslmwb8scV0FEOncBgtTyHSAlokFqFssQN3yGgBCo0XROrPkLSZMtit/CGWqAWarhKaSmSyRucxg9Je/sq16sRHABYRhc11luWHyXpiKu+pytFyPmGlxFJdXdcTvmNeydQFEU6ivCeVc1CCr4a52P7rJqCG3TBIOEuPGWxUBoHT7BrmcznmkJuz+Urs/lVpFxvqtSO4ZE97BRCt7eMGyGlQCANswQm/c5N4OfJGEkE7f0R35B1QDRrfTXfQeRxXk3eR9D796viy5AgDi/iOKVVoh9h4z6Rqyh8BAOKWInwoAOS7lNOqp9+F1MCrglRW0QuwfLLL/+Bgf5Ee5R1rIeTA17KQiunH/cZUJEoWvoLjHMY4R8Yc6muOMWf4kKDgHBEDfH22N4nIxxZqGBE2MO/Cc4PZiJf9eBI4XbAkdcv1VHmhYcB+92hrBXZgD96B/vdN/IVMo/0xBh7qc5PrGJQCcS66YQcaesKt8AjukzhAIOywUwjjjPbh3z6QWsyjPFgL4LDSWjItpzm7h6gSXhGUBPozUkGPVNLNlxQFAXbl2mSBAB5swCoAQG4Bg2G+EP0OeJ1gbaKwf2RZcDJabcgrtw+VlCoM1BmbIKr4Z4wEokciR3bISAB6OgNJ+PgSAOXbdGBrW68xX+jXvPAsjE663UT/CCHjBjSxHoGI5/gwuPs/no7ksoDOfd2agQx2WY4PKqpCikMzlPbg+R1OOAaVgNb+X85VjN6+cECYAwhFYDsuoD8X0+wkTASPqdLmbt5iVmcSXXCsLADwPR4DOQusdsyL47fmKB+WLOSALotKXIvwiyrjKL36GvMpJ7OlzgCAAjABxqVx7NFvuLJI6HE7iRKsYeYoMZ6wD8DXMdreChSwdQIyAA5rKOsK8g12PCyxt3q9kJhOAS7ahtYGaGyCC+1xvoqQVUip20VR6YIXA4jje9kiRLi4eyR40AAD+I5RyqmS+ALuMk6C6EdDNKFgRHG6w/nwGTViAc8riMsKOnSezmEbAR/3hYNNImJ+g8w6m1flV5UoMALA8xYW4T6i2sCxxtBlzlyq9DQoWPLDkNcMcOEV7yxLbHkrZb7g69PO8iVKuxFiRhwkOQA8NOc471XGE9QnGZZILwFHVpgmDgyWNYBaAt12JNypHwAlUEYYH3DF+j8uYnvMB+RLDYgQAR8h5VqwVbKDQRN/qhmMdAHSnvaV5S4TxweEEb6CLrhdV+4qM+mDLR0kAb7USh5codIS3ldQ+cJPYBMqfkhxfouimfoTN1d1l73EKng7huA6PtZrETmaYNDk+OOFBclB8cHtmSXosit3D9SmtwheCJtJFb9hTZTaZ3sutu7/d6+pVwfIw2V4oFxe93iKpF3zRm43UzKj7t7PByBzPKAcgusP1O/q2W3ifYoyoL4vTMlNX7VpfI2W+FpGRTh6lJG8lK7qphwI5U7YDMSdZNFXzW2TcRJsZqlozPJUwdLS4WMUIyAiNoSCx2Qx/QatMdVGi7kcM0R5jG4kAqMqZa65YgLrFAtQtKQAZ55/ydnaWnJIybsZurQ8AroF/c+PfmKLJDI02uXE5WkfC+ErojRTMKldaSMq5qxSDL3lUjcwT3sC/KA/PeaEFeW5cGgCgy0CfMZrZnxN3C5yvDni/nC6GyW28zOWhG0/RwVj0tGLw5TaeNUAzt/Xy7+RyiE7ULDuilQaA68xFkP7AyIIzjPdMMWC17a3aJ8IQXhRO+M0w1jB0tI2+SBIIZ4KcOolIgPjbG4nQRweyDjtFtMg0AmwcLNuiyZjDBsrzBhx8MEwVC4RIBiEI4Pc9QynCCxd9yydOvICwz55FINIfwjB21jofQA9nHCRCHHEZgHuFPXcH28t+6mM5kMplEyelkGCBvg9zf+lxGNEzACBHoED7NQDUPxHqn1FuEvTEnqGvJlAP1vjE4hMZQ7riNzQQ2+AFz2p++GIi3sY6fdwsxHNTpEMVgsyet94I4ImhUKGer/mMkZOLe/ABZzfYZyzu75LIUUNMLCQ4VdsQpkCLeQoJtunSlYOUIjSAGyRxXtBfT4WwKKjb6flKBIJEzmYIQHxUcIqh9HgyxqQfzG/FIVGqN8n4rdjKx/ITPsWAPDL6QoUUABI6p8nNZxrA8Pn5NCHPpz6LADxnANWJc6xTVe6p8O5lyN9NW5FgkogtbzLrALfWaGENAOKkNPZ3DoCnTTBQT6kQYgRwEivx3KXg7CMSIGUxwsCV3/Mc1Vbg330eqpAKEHkBMZCsEdAtSBTiCVXI5aDE2sGksJJACgBiqqcoEKjYqO8la/FkrwU3LEWF3EiLWYERcAxnks5tBIDWDgZ6EZgwIR9YAJwDYgRS9oRsHCb24jVgzOWU4zpgUiFxKCUnWT5AMNRkEB6o4hyYiHaNngZaKhyW4AIAMFXaWhpGJbVKsEemDDwhMwB6J0rA2rSQMVzIer5WeaiFYiEDbcLdLlM37QzMO/Tpb5zEnsmdkRtd+DWA/h+z1dmT6Fg89pxBIdKMqpFKSvCMM3niYPRGpRlN7b3QjIbKoVoZ/gtud13+gCewujuzPLB5hGQ3RD6qItHhxYOHi5v0hS6TI0Ax4QIybScsg7YSExatA1kAYg6I01RNfPRQHxi/xyOyibae48qNqixC6m4swiJ0HA/LgjHHZRzokxlxlV/Ik66sSYy+eBEA1Men6bQL33GZTvHYD71RKlzpy+Tt7hS/fQC4R3vLk/MRuhnPlm+ZAAgmas5uF48uLzNHAC+xRT4A2BdutFXiUn8E47gwBFOlBNDXU7jVZYknakIP0BtQ4Y2qpUpDqx5XmwDy5sCz8EbluYqh9WI1dUVjDMuhMPVgZYfyGD8+BKiUuLbMKNOenXAi19tzfuUBuMJPnGjB8pDOFaOPpiAwtt/xHmWgnbjdoaOuE2JUAko4bLn6dOkgipLFGgu6A1Xj2UDKEzreIrGymB49ZnQ86I5SY3qELgbQRMIupoO7wd3dIC53g+5DdCAAHsF4MVAEk19AHf50anqaho26UDVzR9M7NWcoC+Ucy7QnBs+cGCOdogpIQYX9ZkJtk6Cox0vLaHLkiFxRWYqrTMSzHTT+eEVS1GcPjTuylHCrvC9NbZREPcIi4i5ZvTI1NGuvy2QNqRNQdU1MKhSulakqtPpLDQLlpJdNYIxEAW1T6uXqaLwdnzUyvWEdcMP1MiXqLQtBow3jraVJrvPMVcaAxZtpEEoivNRxogkEgxWicn1MHYBQS4QimTsq6lsSalvyZjgHzAzL/ks73FNOfP7Y2Gh7xALULRagbrEAdYsFqFssQN1COv8B0+XBbFkTOooAAAAASUVORK5CYII="
@@ -119,11 +152,12 @@
             </section>
         </div>
     </footer>
-    <div id="page-top" >
-        <a href="#top" style="bottom: 0px;" id="scrollButton">VOLVER ARRIBA</a>
+    <div id="page-top">
+        <a href="#top" id="scrollButton"></a>
     </div>
-
-    <script src="js/data/dbz.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   
     <script src="js/main.js"></script>
 </body>
 
