@@ -280,11 +280,11 @@ div .card {
 }
 
 .container-cart-products{
+    color: white;
     position: absolute;
     top: 50px;
     right: 0;
-
-    background-color: #982323;
+    background-color: #30408f; /* Puedes ajustar este color según tus preferencias */
     width: 400px;
     z-index: 1;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
