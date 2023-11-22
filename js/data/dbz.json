@@ -1,679 +1,627 @@
 [
-    {
-        "id": 1,
-        "title": "esfera del dragon",
-        "price": 50,
-        "description": "utiliza las cartas de esfera del dragon para poder realizar los diferentes",
-        "category": "esfera",
-        "personaje":null,
-        "esfera-carta":null,
-        "defensa":null,
-        "ataque":null,
-        "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/pydg59922.250x250.jpg"
-        }
-        ,
-        {
-            "id": 2,
-            "title": "esfera del dragon",
-            "price": 50,
-            "description": "utiliza las cartas de esfera del dragon para poder realizar los diferentes",
-            "category": "esfera",
-            "personaje":null,
-            "esfera-carta":null,
-            "defensa":null,
-            "ataque":null,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/elmn59923.250x250.jpg"
-        }
-        ,
-        {
-            "id": 3,
-            "title": "esfera del dragon",
-            "price": 50,
-            "description": "utiliza las cartas de esfera del dragon para poder realizar los diferentes",
-            "category": "esfera",
-            "personaje":null,
-            "esfera-carta":null,
-            "defensa":null,
-            "ataque":null,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/aoph59924.250x250.jpg"
-        }
-        ,
-        {
-            "id": 4,
-            "title": "esfera del dragon",
-            "price": 50,
-            "description": "utiliza las cartas de esfera del dragon para poder realizar los diferentes",
-            "category": "esfera",
-            "personaje":null,
-            "esfera-carta":null,
-            "defensa":null,
-            "ataque":null,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/vllz59925.250x250.jpg"
-        }
-        ,
-        {
-            "id": 5,
-            "title": "esfera del dragon",
-            "price": 50,
-            "description": "utiliza las cartas de esfera del dragon para poder realizar los diferentes",
-            "category": "esfera",
-            "personaje":null,
-            "esfera-carta":null,
-            "defensa":null,
-            "ataque":null,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/kawl59926.250x250.jpg"
-        }
-        ,
-        {
-            "id": 6,
-            "title": "esfera del dragon",
-            "price": 50,
-            "description": "utiliza las cartas de esfera del dragon para poder realizar los diferentes",
-            "category": "esfera",
-            "personaje":null,
-            "esfera-carta":null,
-            "defensa":null,
-            "ataque":null,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/ppek59927.250x250.jpg"
-        }
-        ,
-        {
-            "id": 7,
-            "title": "esfera del dragon",
-            "price": 50,
-            "description": "utiliza las cartas de esfera del dragon para poder realizar los diferentes",
-            "category": "esfera",
-            "personaje":null,
-            "esfera-carta":null,
-            "defensa":null,
-            "ataque":null,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/tzyj59928.250x250.jpg"
-        }
-        ,
-        {
-            "id": 8,
-            "title": "la furia de vegeta",
-            "price": 80,
-            "description": "vegeta llega a la tierra en busca de kakaroto (goku) y trata de convencerlo para que se una a el",
-            "category": "guerrero z",
-            "personaje":"vegeta",
-            "esfera-carta":1,
-            "defensa":10,
-            "ataque":70,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/kqab59929.250x250.jpg"
-        }
-        ,
-        {
-            "id": 9,
-            "title": "super velocidad",
-            "price": 90,
-            "description": "gracias a años de entrenamiento goku, es capaz de trasladarse a la velocidad de la luz",
-            "category": "guerrero z",
-            "esfera-carta":3,
-            "personaje":"goku",
-            "defensa":30,
-            "ataque":70,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/pvww59930.250x250.jpg"
-        }
-        ,
-        {
-            "id":10,
-            "title": "devolver defensa",
-            "price": 70,
-            "description": "los puntos de defensa de tu adversario se vuelve en su contra sin dañarte (no sirve contra el defensa de las 7 esferas)",
-            "category": "trampa",
-            "personaje":null,
-            "esfera-carta":5,
-            "defensa":null,
-            "ataque":null,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/andy59931.250x250.jpg"
-        }
-        ,
-        {
-            "id": 11,
-            "title": "el conquistador",
-            "price": 90,
-            "description": "gracias a años de entrenamiento goku, es capaz de trasladarse a la velocidad de la luz",
-            "category": "villano",
-            "personaje":"freezer",
-            "esfera-carta":1,
-            "defensa":10,
-            "ataque":60,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/itwf59932.250x250.jpg"
-        }
-        ,
-        {
-            "id": 12,
-            "title": "la ira de goku",
-            "price": 60,
-            "description": "si bien goku es un ser extremadamente bondadoso y divertido no es bueno hacerlo enojar",
-            "category": "guerrero z",
-            "esfera-carta":3,
-            "personaje":"goku",
-            "defensa":20,
-            "ataque":60,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/hlef32660.250x250.jpg"
-        }
-        ,
-        {
-            "id": 13,
-            "title": "ataque de energia",
-            "price": 70,
-            "description": "goku es capaz de generar una gran cantidad de energia y dirigirla contra su adversario",
-            "category": "guerrero z",
-            "esfera-carta":1,
-            "personaje":"goku",
-            "defensa":10,
-            "ataque":50,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/ugrd59934.250x250.jpg"
-        }
-        ,
-        {
-            "id": 14,
-            "title": "el duelo",
-            "price": 70,
-            "description": "goku es capaz de generar una gran cantidad de energia y dirigirla contra su adversario",
-            "category": "hechizo",
-            "personaje":null,
-            "esfera-carta":6,
-            "defensa":null,
-            "ataque":null,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/duop59935.250x250.jpg"
-        }
-        ,
-       
-        {
-            "id": 15,
-            "title": "kame hame ha",
-            "price": 100,
-            "description": "esta tecnica fue creada por mutenroshi a quien perfeccionarla le llevo mas de 50 años",
-            "category": "guerrero z",
-            "esfera-carta":4,
-            "personaje":"goku",
-            "defensa":30,
-            "ataque":50,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/fvlv57411.250x250.jpg"
-        }
-        ,
-        {
-            "id": 16,
-            "title": "destruccion",
-            "price": 80,
-            "description": "tu adversario debe mostrarte si mano elegi una carta (no esfera)y enviala a su cementerio",
-            "category": "hechizo",
-            "personaje":null,
-            "esfera-carta":6,
-            "defensa":null,
-            "ataque":null,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/nomo59937.250x250.jpg"
-        }
-        ,
-        {
-            "id": 17,
-            "title": "choque de titanes",
-            "price": 100,
-            "description": "freezer y goku ,transformado en super saiyan, se encuentra en un duro combate",
-            "category": "duo",
-            "esfera-carta":2,
-            "personaje":null,
-            "defensa":10,
-            "ataque":40,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/btko59938.250x250.jpg"
-        }
-        ,
-        {
-            "id": 18,
-            "title": "choque de titanes",
-            "price": 95,
-            "description": "busca en tu cenmenterio y vuelve una carta a tu mano (no esfera)luego descarta una carta",
-            "category": "villano",
-            "personaje":"freezer",
-            "esfera-carta":4,
-            "defensa":10,
-            "ataque":70,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/pzvl59939.250x250.jpg"
-        }
-        ,
-        {
-            "id": 19,
-            "title": "llega trunks",
-            "price": 65,
-            "description": "desde el futuro , un extraño personaje llega a la tierra a avisar a los guerreros z de un peligro inminente",
-            "category": "guerrero z",
-            "personaje":"trunks",
-            "esfera-carta":7,
-            "defensa":30,
-            "ataque":40,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/zahd59940.250x250.jpg "
-        }
-        ,
-        {
-            "id": 20,
-            "title": "androide a-18",
-            "price": 80,
-            "description": "si ataca juntos a otros andriodes los dos pueden ser bajados con una esfera (la de cualquiera de ellos)",
-            "category": "androide",
-            "personaje":"n18",
-            "esfera-carta":2,
-            "defensa":30,
-            "ataque":40,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/xxti59941.250x250.jpg"
-        }
-        
-        ,
-        {
-            "id": 21,
-            "title": "androide a-17",
-            "price": 75,
-            "description": "si ataca juntos a otros andriodes los dos pueden ser bajados con una esfera (la de cualquiera de ellos)",
-            "category": "androide",
-            "personaje":"n17",
-            "esfera-carta":4,
-            "defensa":50,
-            "ataque":30,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/tzxu59942.250x250.jpg"
-        }
-        ,
-        {
-            "id": 22,
-            "title": "androide a-16",
-            "price": 75,
-            "description": "si ataca juntos a otros andriodes los dos pueden ser bajados con una esfera (la de cualquiera de ellos)",
-            "category": "androide",
-            "personaje":"n16",
-            "esfera-carta":6,
-            "defensa":60,
-            "ataque":30,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/ybkm59943.250x250.jpg"
-        }
-        ,
-        {
-            "id": 23,
-            "title": "la chance de cell",
-            "price": 70,
-            "description": "descarta hasta 3 cartas de tu mano y roba otras 3 de tu mazo, luego mezclar bien",
-            "category": "androide",
-            "personaje":"cell",
-            "esfera-carta":7,
-            "defensa":null,
-            "ataque":null,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/wjey59944.250x250.jpg"
-        }
-        ,
-        {
-            "id": 24,
-            "title": "cell el implacable",
-            "price": 92,
-            "description": "cell no dudara en destruir a quien sea necesario para absorber su energia y hacerse asi mas poderoso",
-            "category": "androide",
-            "personaje":"cell",
-            "esfera-carta":2,
-            "defensa":30,
-            "ataque":20,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/rkss59945.250x250.jpg"
-        }
-        ,
-        {
-            "id": 25,
-            "title": "premonicion",
-            "price": 86,
-            "description": "tu contricante esta obligado a mostrarte su mano",
-            "category": "guerrero z",
-            "personaje":"vegeta",
-            "esfera-carta":5,
-            "defensa":null,
-            "ataque":null,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/ijlz59946.250x250.jpg"
-        }
-        ,
-        {
-            "id": 26,
-            "title": "campo de energia",
-            "price": 91,
-            "description": "la energia puede ser utilizada de muchas manera. el campo de energia, aunque no genera mcuho daño suele ser efectivo",
-            "category": "guerrero z",
-            "personaje":"trunks",
-            "esfera-carta":7,
-            "defensa":50,
-            "ataque":20,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/cxyi59947.250x250.jpg"
-        }
-        ,
-        {
-            "id": 27,
-            "title": "super ataque",
-            "price": 100,
-            "description": "modfica la potencia de una carta en +0 +40",
-            "category": "hechizo rapido",
-            "personaje": null,
-            "esfera-carta":6,
-            "defensa":null,
-            "ataque":null,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/pnzq59948.250x250.jpg"
-        }
-        ,
-        {
-            "id": 28,
-            "title": "descarga de energia",
-            "price": 100,
-            "description": "modfica la potencia de una carta en +0 +40",
-            "category": "guerrero z",
-            "personaje": "vegeta",
-            "esfera-carta":7,
-            "defensa":70,
-            "ataque":20,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/cgec59949.250x250.jpg"
-        }
-        ,
-        {
-            "id": 29,
-            "title": "super ataque",
-            "price": 80,
-            "description": "modfica la potencia de una carta en +20 +0",
-            "category": "hechizo rapido",
-            "personaje": "cell",
-            "esfera-carta":3,
-            "defensa":null,
-            "ataque":null,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/xtph59950.250x250.jpg"
-        }
-        ,
-        {
-            "id": 30,
-            "title": "mister satan",
-            "price": 40,
-            "description": "en la tierra de todos piensa que mister satan es un verdadero hero y un gran guerrero",
-            "category": "humano",
-            "personaje": "mister satan",
-            "esfera-carta":7,
-            "defensa":50,
-            "ataque":10,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/gdpx59951.250x250.jpg"
-        }
-        ,
-        {
-            "id": 31,
-            "title": "la magia del dragon",
-            "price": 67,
-            "description": "recupera 20 puntos de energia sin superar el maximo del contador",
-            "category": "hechizo",
-            "personaje": "dende",
-            "esfera-carta":5,
-            "defensa":null,
-            "ataque":null,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/jytn59952.250x250.jpg"
-        }
-        ,
-        {
-            "id": 32,
-            "title": "gohan",
-            "price": 55,
-            "description": "entrenado por pikoro , gohan se transforma rapidamente en un gran guerrero saiyan",
-            "category": "guerrero z",
-            "personaje": "gohan",
-            "esfera-carta":7,
-            "defensa":70,
-            "ataque":10,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/tzlt59953.250x250.jpg"
-        }
-        ,
-        {
-            "id": 33,
-            "title": "vegeta super saiyan",
-            "price": 98,
-            "description": "vegeta lucha interminadamente entre el bien y el mal es uno de los mas poderosos personajes de la saga",
-            "category": "guerrero z",
-            "personaje": "vegeta",
-            "esfera-carta":1,
-            "defensa":10,
-            "ataque":70,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/fwdo59954.250x250.jpg"
-        }
-        ,
-        {
-            "id": 34,
-            "title": "explosion de energia",
-            "price": 85,
-            "description": "la ira de goku ha generado una terrible explosion de energia",
-            "category": "guerrero z",
-            "personaje": "goku",
-            "esfera-carta":3,
-            "defensa":30,
-            "ataque":70,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/zcef59955.250x250.jpg"
-        }
-        ,
-        {
-            "id": 35,
-            "title": "neutralizacion",
-            "price": 110,
-            "description": "el ataque de tu contricante no te hace ningun daño no sirve contra el ataque de las esferas",
-            "category": "hechizo rapido",
-            "personaje": "goku",
-            "esfera-carta":7,
-            "defensa":null,
-            "ataque":null,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/acrz59956.250x250.jpg"
-        }
-        ,
-        {
-            "id": 36,
-            "title": "trunks",
-            "price": 80,
-            "description": "trunks viene de un futuro alternativo , donde la tierra ha sufrido terribles acontecimientos",
-            "category": "guerrero z",
-            "personaje": "trunks",
-            "esfera-carta":1,
-            "defensa":10,
-            "ataque":60,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/adda59957.250x250.jpg"
-        }
-        ,
-        {
-            "id": 37,
-            "title": "goku y sus amigos",
-            "price": 100,
-            "description": "cuando las cosas se ponen dificiles lo mejor es unir fuerza",
-            "category": "guerrero z",
-            "personaje": "guerrero z",
-            "esfera-carta":3,
-            "defensa":20,
-            "ataque":60,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/oqmh59958.250x250.jpg"
-        }
-        ,
-        {
-            "id": 38,
-            "title": "destruccion",
-            "price": 40,
-            "description": "tu contricante esta obligado a mostrarte su mano y descartar todas las esferas que tenga",
-            "category": "guerrero z",
-            "personaje": "goku",
-            "esfera-carta":6,
-            "defensa":null,
-            "ataque":null,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/ccjd59959.250x250.jpg"
-        }
-        ,
-        {
-            "id": 39,
-            "title": "lucha de coloso",
-            "price": 68,
-            "description": "goku y cell se enfrentan en una batalla sin igual",
-            "category": "guerrero z",
-            "personaje": null,
-            "esfera-carta":1,
-            "defensa":10,
-            "ataque":50,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/lwin59960.250x250.jpg"
-        }
-        ,
-        {
-            "id": 40,
-            "title": "kame hame ha nivel 2",
-            "price": 115,
-            "description": "esta es una de las mas potente tecnica utilizada por goku y su familia",
-            "category": "guerrero z",
-            "personaje": "goku",
-            "esfera-carta":4,
-            "defensa":20,
-            "ataque":70,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/yfpb59961.250x250.jpg"
-        }
-        ,
-        {
-            "id": 41,
-            "title": "embestida",
-            "price": 91,
-            "description": "este ataque no puede ser bloqueado",
-            "category": "guerrero z",
-            "personaje": "gohan",
-            "esfera-carta":6,
-            "defensa":20,
-            "ataque":50,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/heif59962.250x250.jpg"
-        }
-        ,
-        {
-            "id": 42,
-            "title": "gohan super saiyan",
-            "price": 200,
-            "description": "el poderoso gohan alcanzo el nivel de super saiyan a corta edad para sorpresa de goku y vegeta",
-            "category": "guerrero z",
-            "personaje": "gohan",
-            "esfera-carta":2,
-            "defensa":10,
-            "ataque":40,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/duka59963.250x250.jpg"
-        }
-        ,
-        {
-            "id": 43,
-            "title": "el poder de shenron",
-            "price": 63,
-            "description": "busca en tu pila de descarte una carta de ataque que quieras volver a tu mano y luego descarta otra",
-            "category": "shenron",
-            "personaje": "shenron",
-            "esfera-carta":4,
-            "defensa":null,
-            "ataque":null,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/mhpb59964.250x250.jpg"
-        }
-        ,
-        {
-            "id": 44,
-            "title": "yamcha",
-            "price": 52,
-            "description": "aunque no tengo los poderes de un saiyan , yamcha es una guerrero muy valiente y leal a sus amigos",
-            "category": "humano",
-            "personaje": "yamcha",
-            "esfera-carta":7,
-            "defensa":30,
-            "ataque":40,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/plgu59965.250x250.jpg"
-        }
-        ,
-        {
-            "id": 45,
-            "title": "el pdoer de gohan",
-            "price": 70,
-            "description": "gracias a horas de entrenamiento en la capsula del tiempo junto a goku , gohan alcanza muchisimo poder",
-            "category": "guerrero z",
-            "personaje": "gohan",
-            "esfera-carta":2,
-            "defensa":40,
-            "ataque":30,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/usfr59966.250x250.jpg"
-        }
-        ,
-        {
-            "id": 46,
-            "title": "tecnica mixtas",
-            "price": 70,
-            "description": "modfica la potencia de una carta en +20 +20",
-            "category": "androide",
-            "personaje": "cell",
-            "esfera-carta":4,
-            "defensa":null,
-            "ataque":null,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/tjzf32661.250x250.jpg"
-        }
-        ,
-        {
-            "id": 47,
-            "title": "golpe de gracia",
-            "price": 69,
-            "description": "tras una dura pelea , goku se despide de su derrotado adversario",
-            "category": "guerrero z",
-            "personaje": "gohan",
-            "esfera-carta":6,
-            "defensa":60,
-            "ataque":30,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/rult59968.250x250.jpg"
-        }
-        ,
-        {
-            "id": 48,
-            "title": "knock our",
-            "price": 80,
-            "description": "descarta hasta 6 cartas de tu mano y roba de tu mazo la misma cantidad , no puedes atacar en este turno",
-            "category": "hechizo",
-            "personaje": null,
-            "esfera-carta":7,
-            "defensa":null,
-            "ataque":null,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/fzpl59969.250x250.jpg"
-        }
-        ,
-        {
-            "id": 49,
-            "title": "rayos de energia",
-            "price": 50,
-            "description": "vegeta lanza un terrible ataque utilizando su energia",
-            "category": "guerrero z",
-            "personaje": "vegeta",
-            "esfera-carta":2,
-            "defensa":30,
-            "ataque":20,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/xpdi59970.250x250.jpg"
-        }
-        ,
-        {
-            "id": 50,
-            "title": "compartir esfera",
-            "price": 120,
-            "description": "gracias a esta carta , puedes bajar cualquier ataque (solo 1) sin necesidad de gastar otra esfera",
-            "category": "hechizo",
-            "personaje": null,
-            "esfera-carta":5,
-            "defensa":null,
-            "ataque":null,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/unef59971.250x250.jpg"
-        }
-        ,
-        {
-            "id": 51,
-            "title": "el androide maldito",
-            "price": 70,
-            "description": "cell nunca imagino el gran poder de goku y los demas saiyan",
-            "category": "androide",
-            "personaje": "cell",
-            "esfera-carta":7,
-            "defensa":50,
-            "ataque":20,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/wvmx59972.250x250.jpg"
-        }
-        ,
-        {
-            "id": 52,
-            "title": "defensa superior",
-            "price": 90,
-            "description": "modfica la potencia de una carta en +20 +0",
-            "category": "guerrero z",
-            "personaje": "goku",
-            "esfera-carta":6,
-            "defensa":null,
-            "ataque":null,
-            "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/ojwr32662.250x250.jpg"
-        }
+  {
+    "id": 1,
+    "title": "esfera del dragon",
+    "price": 50,
+    "description": "utiliza las cartas de esfera del dragon para poder realizar los diferentes",
+    "category": "esfera",
+    "personaje": null,
+    "esfera-carta": null,
+    "defensa": null,
+    "ataque": null,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/pydg59922.250x250.jpg"
+  },
+  {
+    "id": 2,
+    "title": "esfera del dragon",
+    "price": 50,
+    "description": "utiliza las cartas de esfera del dragon para poder realizar los diferentes",
+    "category": "esfera",
+    "personaje": null,
+    "esfera-carta": null,
+    "defensa": null,
+    "ataque": null,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/elmn59923.250x250.jpg"
+  },
+  {
+    "id": 3,
+    "title": "esfera del dragon",
+    "price": 50,
+    "description": "utiliza las cartas de esfera del dragon para poder realizar los diferentes",
+    "category": "esfera",
+    "personaje": null,
+    "esfera-carta": null,
+    "defensa": null,
+    "ataque": null,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/aoph59924.250x250.jpg"
+  },
+  {
+    "id": 4,
+    "title": "esfera del dragon",
+    "price": 50,
+    "description": "utiliza las cartas de esfera del dragon para poder realizar los diferentes",
+    "category": "esfera",
+    "personaje": null,
+    "esfera-carta": null,
+    "defensa": null,
+    "ataque": null,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/vllz59925.250x250.jpg"
+  },
+  {
+    "id": 5,
+    "title": "esfera del dragon",
+    "price": 50,
+    "description": "utiliza las cartas de esfera del dragon para poder realizar los diferentes",
+    "category": "esfera",
+    "personaje": null,
+    "esfera-carta": null,
+    "defensa": null,
+    "ataque": null,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/kawl59926.250x250.jpg"
+  },
+  {
+    "id": 6,
+    "title": "esfera del dragon",
+    "price": 50,
+    "description": "utiliza las cartas de esfera del dragon para poder realizar los diferentes",
+    "category": "esfera",
+    "personaje": null,
+    "esfera-carta": null,
+    "defensa": null,
+    "ataque": null,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/ppek59927.250x250.jpg"
+  },
+  {
+    "id": 7,
+    "title": "esfera del dragon",
+    "price": 50,
+    "description": "utiliza las cartas de esfera del dragon para poder realizar los diferentes",
+    "category": "esfera",
+    "personaje": null,
+    "esfera-carta": null,
+    "defensa": null,
+    "ataque": null,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/tzyj59928.250x250.jpg"
+  },
+  {
+    "id": 8,
+    "title": "la furia de vegeta",
+    "price": 80,
+    "description": "vegeta llega a la tierra en busca de kakaroto (goku) y trata de convencerlo para que se una a el",
+    "category": "guerrero z",
+    "personaje": "vegeta",
+    "esfera-carta": 1,
+    "defensa": 10,
+    "ataque": 70,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/kqab59929.250x250.jpg"
+  },
+  {
+    "id": 9,
+    "title": "super velocidad",
+    "price": 90,
+    "description": "gracias a años de entrenamiento goku, es capaz de trasladarse a la velocidad de la luz",
+    "category": "guerrero z",
+    "esfera-carta": 3,
+    "personaje": "goku",
+    "defensa": 30,
+    "ataque": 70,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/pvww59930.250x250.jpg"
+  },
+  {
+    "id": 10,
+    "title": "devolver defensa",
+    "price": 70,
+    "description": "los puntos de defensa de tu adversario se vuelve en su contra sin dañarte (no sirve contra el defensa de las 7 esferas)",
+    "category": "trampa",
+    "personaje": null,
+    "esfera-carta": 5,
+    "defensa": null,
+    "ataque": null,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/andy59931.250x250.jpg"
+  },
+  {
+    "id": 11,
+    "title": "el conquistador",
+    "price": 90,
+    "description": "gracias a años de entrenamiento goku, es capaz de trasladarse a la velocidad de la luz",
+    "category": "villano",
+    "personaje": "freezer",
+    "esfera-carta": 1,
+    "defensa": 10,
+    "ataque": 60,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/itwf59932.250x250.jpg"
+  },
+  {
+    "id": 12,
+    "title": "la ira de goku",
+    "price": 60,
+    "description": "si bien goku es un ser extremadamente bondadoso y divertido no es bueno hacerlo enojar",
+    "category": "guerrero z",
+    "esfera-carta": 3,
+    "personaje": "goku",
+    "defensa": 20,
+    "ataque": 60,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/hlef32660.250x250.jpg"
+  },
+  {
+    "id": 13,
+    "title": "ataque de energia",
+    "price": 70,
+    "description": "goku es capaz de generar una gran cantidad de energia y dirigirla contra su adversario",
+    "category": "guerrero z",
+    "esfera-carta": 1,
+    "personaje": "goku",
+    "defensa": 10,
+    "ataque": 50,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/ugrd59934.250x250.jpg"
+  },
+  {
+    "id": 14,
+    "title": "el duelo",
+    "price": 70,
+    "description": "goku es capaz de generar una gran cantidad de energia y dirigirla contra su adversario",
+    "category": "hechizo",
+    "personaje": null,
+    "esfera-carta": 6,
+    "defensa": null,
+    "ataque": null,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/duop59935.250x250.jpg"
+  },
+  {
+    "id": 15,
+    "title": "kame hame ha",
+    "price": 100,
+    "description": "esta tecnica fue creada por mutenroshi a quien perfeccionarla le llevo mas de 50 años",
+    "category": "guerrero z",
+    "esfera-carta": 4,
+    "personaje": "goku",
+    "defensa": 30,
+    "ataque": 50,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/fvlv57411.250x250.jpg"
+  },
+  {
+    "id": 16,
+    "title": "destruccion",
+    "price": 80,
+    "description": "tu adversario debe mostrarte si mano elegi una carta (no esfera)y enviala a su cementerio",
+    "category": "hechizo",
+    "personaje": null,
+    "esfera-carta": 6,
+    "defensa": null,
+    "ataque": null,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/nomo59937.250x250.jpg"
+  },
+  {
+    "id": 17,
+    "title": "choque de titanes",
+    "price": 100,
+    "description": "freezer y goku ,transformado en super saiyan, se encuentra en un duro combate",
+    "category": "duo",
+    "esfera-carta": 2,
+    "personaje": null,
+    "defensa": 10,
+    "ataque": 40,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/btko59938.250x250.jpg"
+  },
+  {
+    "id": 18,
+    "title": "choque de titanes",
+    "price": 95,
+    "description": "busca en tu cenmenterio y vuelve una carta a tu mano (no esfera)luego descarta una carta",
+    "category": "villano",
+    "personaje": "freezer",
+    "esfera-carta": 4,
+    "defensa": 10,
+    "ataque": 70,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/pzvl59939.250x250.jpg"
+  },
+  {
+    "id": 19,
+    "title": "llega trunks",
+    "price": 65,
+    "description": "desde el futuro , un extraño personaje llega a la tierra a avisar a los guerreros z de un peligro inminente",
+    "category": "guerrero z",
+    "personaje": "trunks",
+    "esfera-carta": 7,
+    "defensa": 30,
+    "ataque": 40,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/zahd59940.250x250.jpg "
+  },
+  {
+    "id": 20,
+    "title": "androide a-18",
+    "price": 80,
+    "description": "si ataca juntos a otros andriodes los dos pueden ser bajados con una esfera (la de cualquiera de ellos)",
+    "category": "androide",
+    "personaje": "n18",
+    "esfera-carta": 2,
+    "defensa": 30,
+    "ataque": 40,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/xxti59941.250x250.jpg"
+  },
+
+  {
+    "id": 21,
+    "title": "androide a-17",
+    "price": 75,
+    "description": "si ataca juntos a otros andriodes los dos pueden ser bajados con una esfera (la de cualquiera de ellos)",
+    "category": "androide",
+    "personaje": "n17",
+    "esfera-carta": 4,
+    "defensa": 50,
+    "ataque": 30,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/tzxu59942.250x250.jpg"
+  },
+  {
+    "id": 22,
+    "title": "androide a-16",
+    "price": 75,
+    "description": "si ataca juntos a otros andriodes los dos pueden ser bajados con una esfera (la de cualquiera de ellos)",
+    "category": "androide",
+    "personaje": "n16",
+    "esfera-carta": 6,
+    "defensa": 60,
+    "ataque": 30,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/ybkm59943.250x250.jpg"
+  },
+  {
+    "id": 23,
+    "title": "la chance de cell",
+    "price": 70,
+    "description": "descarta hasta 3 cartas de tu mano y roba otras 3 de tu mazo, luego mezclar bien",
+    "category": "androide",
+    "personaje": "cell",
+    "esfera-carta": 7,
+    "defensa": null,
+    "ataque": null,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/wjey59944.250x250.jpg"
+  },
+  {
+    "id": 24,
+    "title": "cell el implacable",
+    "price": 92,
+    "description": "cell no dudara en destruir a quien sea necesario para absorber su energia y hacerse asi mas poderoso",
+    "category": "androide",
+    "personaje": "cell",
+    "esfera-carta": 2,
+    "defensa": 30,
+    "ataque": 20,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/rkss59945.250x250.jpg"
+  },
+  {
+    "id": 25,
+    "title": "premonicion",
+    "price": 86,
+    "description": "tu contricante esta obligado a mostrarte su mano",
+    "category": "guerrero z",
+    "personaje": "vegeta",
+    "esfera-carta": 5,
+    "defensa": null,
+    "ataque": null,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/ijlz59946.250x250.jpg"
+  },
+  {
+    "id": 26,
+    "title": "campo de energia",
+    "price": 91,
+    "description": "la energia puede ser utilizada de muchas manera. el campo de energia, aunque no genera mcuho daño suele ser efectivo",
+    "category": "guerrero z",
+    "personaje": "trunks",
+    "esfera-carta": 7,
+    "defensa": 50,
+    "ataque": 20,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/cxyi59947.250x250.jpg"
+  },
+  {
+    "id": 27,
+    "title": "super ataque",
+    "price": 100,
+    "description": "modfica la potencia de una carta en +0 +40",
+    "category": "hechizo rapido",
+    "personaje": null,
+    "esfera-carta": 6,
+    "defensa": null,
+    "ataque": null,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/pnzq59948.250x250.jpg"
+  },
+  {
+    "id": 28,
+    "title": "descarga de energia",
+    "price": 100,
+    "description": "modfica la potencia de una carta en +0 +40",
+    "category": "guerrero z",
+    "personaje": "vegeta",
+    "esfera-carta": 7,
+    "defensa": 70,
+    "ataque": 20,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/cgec59949.250x250.jpg"
+  },
+  {
+    "id": 29,
+    "title": "super ataque",
+    "price": 80,
+    "description": "modfica la potencia de una carta en +20 +0",
+    "category": "hechizo rapido",
+    "personaje": "cell",
+    "esfera-carta": 3,
+    "defensa": null,
+    "ataque": null,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/xtph59950.250x250.jpg"
+  },
+  {
+    "id": 30,
+    "title": "mister satan",
+    "price": 40,
+    "description": "en la tierra de todos piensa que mister satan es un verdadero hero y un gran guerrero",
+    "category": "humano",
+    "personaje": "mister satan",
+    "esfera-carta": 7,
+    "defensa": 50,
+    "ataque": 10,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/gdpx59951.250x250.jpg"
+  },
+  {
+    "id": 31,
+    "title": "la magia del dragon",
+    "price": 67,
+    "description": "recupera 20 puntos de energia sin superar el maximo del contador",
+    "category": "hechizo",
+    "personaje": "dende",
+    "esfera-carta": 5,
+    "defensa": null,
+    "ataque": null,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/jytn59952.250x250.jpg"
+  },
+  {
+    "id": 32,
+    "title": "gohan",
+    "price": 55,
+    "description": "entrenado por pikoro , gohan se transforma rapidamente en un gran guerrero saiyan",
+    "category": "guerrero z",
+    "personaje": "gohan",
+    "esfera-carta": 7,
+    "defensa": 70,
+    "ataque": 10,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/tzlt59953.250x250.jpg"
+  },
+  {
+    "id": 33,
+    "title": "vegeta super saiyan",
+    "price": 98,
+    "description": "vegeta lucha interminadamente entre el bien y el mal es uno de los mas poderosos personajes de la saga",
+    "category": "guerrero z",
+    "personaje": "vegeta",
+    "esfera-carta": 1,
+    "defensa": 10,
+    "ataque": 70,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/fwdo59954.250x250.jpg"
+  },
+  {
+    "id": 34,
+    "title": "explosion de energia",
+    "price": 85,
+    "description": "la ira de goku ha generado una terrible explosion de energia",
+    "category": "guerrero z",
+    "personaje": "goku",
+    "esfera-carta": 3,
+    "defensa": 30,
+    "ataque": 70,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/zcef59955.250x250.jpg"
+  },
+  {
+    "id": 35,
+    "title": "neutralizacion",
+    "price": 110,
+    "description": "el ataque de tu contricante no te hace ningun daño no sirve contra el ataque de las esferas",
+    "category": "hechizo rapido",
+    "personaje": "goku",
+    "esfera-carta": 7,
+    "defensa": null,
+    "ataque": null,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/acrz59956.250x250.jpg"
+  },
+  {
+    "id": 36,
+    "title": "trunks",
+    "price": 80,
+    "description": "trunks viene de un futuro alternativo , donde la tierra ha sufrido terribles acontecimientos",
+    "category": "guerrero z",
+    "personaje": "trunks",
+    "esfera-carta": 1,
+    "defensa": 10,
+    "ataque": 60,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/adda59957.250x250.jpg"
+  },
+  {
+    "id": 37,
+    "title": "goku y sus amigos",
+    "price": 100,
+    "description": "cuando las cosas se ponen dificiles lo mejor es unir fuerza",
+    "category": "guerrero z",
+    "personaje": "guerrero z",
+    "esfera-carta": 3,
+    "defensa": 20,
+    "ataque": 60,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/oqmh59958.250x250.jpg"
+  },
+  {
+    "id": 38,
+    "title": "destruccion",
+    "price": 40,
+    "description": "tu contricante esta obligado a mostrarte su mano y descartar todas las esferas que tenga",
+    "category": "guerrero z",
+    "personaje": "goku",
+    "esfera-carta": 6,
+    "defensa": null,
+    "ataque": null,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/ccjd59959.250x250.jpg"
+  },
+  {
+    "id": 39,
+    "title": "lucha de coloso",
+    "price": 68,
+    "description": "goku y cell se enfrentan en una batalla sin igual",
+    "category": "guerrero z",
+    "personaje": null,
+    "esfera-carta": 1,
+    "defensa": 10,
+    "ataque": 50,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/lwin59960.250x250.jpg"
+  },
+  {
+    "id": 40,
+    "title": "kame hame ha nivel 2",
+    "price": 115,
+    "description": "esta es una de las mas potente tecnica utilizada por goku y su familia",
+    "category": "guerrero z",
+    "personaje": "goku",
+    "esfera-carta": 4,
+    "defensa": 20,
+    "ataque": 70,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/yfpb59961.250x250.jpg"
+  },
+  {
+    "id": 41,
+    "title": "embestida",
+    "price": 91,
+    "description": "este ataque no puede ser bloqueado",
+    "category": "guerrero z",
+    "personaje": "gohan",
+    "esfera-carta": 6,
+    "defensa": 20,
+    "ataque": 50,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/heif59962.250x250.jpg"
+  },
+  {
+    "id": 42,
+    "title": "gohan super saiyan",
+    "price": 200,
+    "description": "el poderoso gohan alcanzo el nivel de super saiyan a corta edad para sorpresa de goku y vegeta",
+    "category": "guerrero z",
+    "personaje": "gohan",
+    "esfera-carta": 2,
+    "defensa": 10,
+    "ataque": 40,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/duka59963.250x250.jpg"
+  },
+  {
+    "id": 43,
+    "title": "el poder de shenron",
+    "price": 63,
+    "description": "busca en tu pila de descarte una carta de ataque que quieras volver a tu mano y luego descarta otra",
+    "category": "shenron",
+    "personaje": "shenron",
+    "esfera-carta": 4,
+    "defensa": null,
+    "ataque": null,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/mhpb59964.250x250.jpg"
+  },
+  {
+    "id": 44,
+    "title": "yamcha",
+    "price": 52,
+    "description": "aunque no tengo los poderes de un saiyan , yamcha es una guerrero muy valiente y leal a sus amigos",
+    "category": "humano",
+    "personaje": "yamcha",
+    "esfera-carta": 7,
+    "defensa": 30,
+    "ataque": 40,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/plgu59965.250x250.jpg"
+  },
+  {
+    "id": 45,
+    "title": "el pdoer de gohan",
+    "price": 70,
+    "description": "gracias a horas de entrenamiento en la capsula del tiempo junto a goku , gohan alcanza muchisimo poder",
+    "category": "guerrero z",
+    "personaje": "gohan",
+    "esfera-carta": 2,
+    "defensa": 40,
+    "ataque": 30,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/usfr59966.250x250.jpg"
+  },
+  {
+    "id": 46,
+    "title": "tecnica mixtas",
+    "price": 70,
+    "description": "modfica la potencia de una carta en +20 +20",
+    "category": "androide",
+    "personaje": "cell",
+    "esfera-carta": 4,
+    "defensa": null,
+    "ataque": null,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/tjzf32661.250x250.jpg"
+  },
+  {
+    "id": 47,
+    "title": "golpe de gracia",
+    "price": 69,
+    "description": "tras una dura pelea , goku se despide de su derrotado adversario",
+    "category": "guerrero z",
+    "personaje": "gohan",
+    "esfera-carta": 6,
+    "defensa": 60,
+    "ataque": 30,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/rult59968.250x250.jpg"
+  },
+  {
+    "id": 48,
+    "title": "knock our",
+    "price": 80,
+    "description": "descarta hasta 6 cartas de tu mano y roba de tu mazo la misma cantidad , no puedes atacar en este turno",
+    "category": "hechizo",
+    "personaje": null,
+    "esfera-carta": 7,
+    "defensa": null,
+    "ataque": null,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/fzpl59969.250x250.jpg"
+  },
+  {
+    "id": 49,
+    "title": "rayos de energia",
+    "price": 50,
+    "description": "vegeta lanza un terrible ataque utilizando su energia",
+    "category": "guerrero z",
+    "personaje": "vegeta",
+    "esfera-carta": 2,
+    "defensa": 30,
+    "ataque": 20,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/xpdi59970.250x250.jpg"
+  },
+  {
+    "id": 50,
+    "title": "compartir esfera",
+    "price": 120,
+    "description": "gracias a esta carta , puedes bajar cualquier ataque (solo 1) sin necesidad de gastar otra esfera",
+    "category": "hechizo",
+    "personaje": null,
+    "esfera-carta": 5,
+    "defensa": null,
+    "ataque": null,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/unef59971.250x250.jpg"
+  },
+  {
+    "id": 51,
+    "title": "el androide maldito",
+    "price": 70,
+    "description": "cell nunca imagino el gran poder de goku y los demas saiyan",
+    "category": "androide",
+    "personaje": "cell",
+    "esfera-carta": 7,
+    "defensa": 50,
+    "ataque": 20,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/wvmx59972.250x250.jpg"
+  },
+  {
+    "id": 52,
+    "title": "defensa superior",
+    "price": 90,
+    "description": "modfica la potencia de una carta en +20 +0",
+    "category": "guerrero z",
+    "personaje": "goku",
+    "esfera-carta": 6,
+    "defensa": null,
+    "ataque": null,
+    "image": "https://dragonball.center/files/module_dbc/_thumbs/objetos/ojwr32662.250x250.jpg"
+  }
 ]

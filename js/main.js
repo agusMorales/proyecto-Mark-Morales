@@ -1,10 +1,10 @@
 // Función para obtener el título de una carta, si no tiene, devuelve 'Sin título'
-const obtenerTituloCarta = (producto) => producto.title || 'Sin título';
+const obtenerTituloCarta = (producto) => producto.title || "Sin título";
 
 // Función para crear un elemento carta y devolverlo
 function crearElementoCarta(producto) {
-  const carta = document.createElement('div');
-  carta.className = 'card';
+  const carta = document.createElement("div");
+  carta.className = "card";
   carta.innerHTML = `
     <h4 class="numero-carta">Carta N°${producto.id}</h4>
     <h4 class="titulo-carta">${obtenerTituloCarta(producto)}</h4>
@@ -28,19 +28,21 @@ function crearProductos(datos, contenedor) {
 }
 
 // Obtener datos desde el archivo JSON
-fetch('js/data/dbz.json')
-  .then(response => response.json())
-  .then(data => {
+fetch("js/data/dbz.json")
+  .then((response) => response.json())
+  .then((data) => {
     // Crear cartas y agregarlas al contenedor con id 'container-dbz'
-    crearProductos(data, document.getElementById('container-dbz'));
+    crearProductos(data, document.getElementById("container-dbz"));
   })
-  .catch(error => console.error('Error al obtener los datos:', error));
-
+  .catch((error) => console.error("Error al obtener los datos:", error));
 
 // Lógica para mostrar/ocultar el botón de desplazamiento basado en el desplazamiento de la página
 window.onscroll = function () {
   var button = document.getElementById("scrollButton");
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+  if (
+    document.body.scrollTop > 100 ||
+    document.documentElement.scrollTop > 100
+  ) {
     button.style.display = "block";
   } else {
     button.style.display = "none";
@@ -53,40 +55,47 @@ function scrollToTop() {
   document.documentElement.scrollTop = 0;
 }
 
-//barra de busqueda 
+//barra de busqueda
 function buscar() {
-  const input = document.getElementById('searchInput');
+  const input = document.getElementById("searchInput");
   const term = input.value.toLowerCase();
 
-  const cartas = document.querySelectorAll('.card');
+  const cartas = document.querySelectorAll(".card");
 
-  cartas.forEach(carta => {
-    const numeroCarta = carta.querySelector('.numero-carta').textContent.toLowerCase();
-    const titulo = carta.querySelector('.titulo-carta').textContent.toLowerCase();
-    const personaje = carta.querySelector('.personaje').textContent.toLowerCase();
+  cartas.forEach((carta) => {
+    const numeroCarta = carta
+      .querySelector(".numero-carta")
+      .textContent.toLowerCase();
+    const titulo = carta
+      .querySelector(".titulo-carta")
+      .textContent.toLowerCase();
+    const personaje = carta
+      .querySelector(".personaje")
+      .textContent.toLowerCase();
 
     // Buscar tanto por título como por personaje
-    if (titulo.includes(term) || personaje.includes(term) || numeroCarta.includes(term)) {
-      carta.classList.remove('oculta');  // Quitar clase para mostrar la carta
+    if (
+      titulo.includes(term) ||
+      personaje.includes(term) ||
+      numeroCarta.includes(term)
+    ) {
+      carta.classList.remove("oculta"); // Quitar clase para mostrar la carta
     } else {
-      carta.classList.add('oculta');  // Agregar clase para ocultar la carta
+      carta.classList.add("oculta"); // Agregar clase para ocultar la carta
     }
   });
 }
 
-
-
 function resetBuscar() {
-  const input = document.getElementById('searchInput');
-  input.value = ''; // Limpiar el valor del input
+  const input = document.getElementById("searchInput");
+  input.value = ""; // Limpiar el valor del input
 
-  const cartas = document.querySelectorAll('.card');
+  const cartas = document.querySelectorAll(".card");
 
-  cartas.forEach(carta => {
-    carta.style.display = 'block'; // Mostrar todas las cartas
+  cartas.forEach((carta) => {
+    carta.style.display = "block"; // Mostrar todas las cartas
   });
 }
-
 
 // Función para alternar entre modos 'claro' y 'oscuro'
 function alternarModo() {
@@ -104,7 +113,7 @@ function alternarModo() {
     botonModo.textContent = "Modo Claro";
     localStorage.setItem("modo", "oscuro");
     // Agregar clase a las cartas para modo oscuro
-    cartas.forEach(carta => {
+    cartas.forEach((carta) => {
       carta.classList.remove("modo-claro");
       carta.classList.add("modo-oscuro");
     });
@@ -117,16 +126,15 @@ function alternarModo() {
     botonModo.textContent = "Modo Oscuro";
     localStorage.setItem("modo", "claro");
     // Agregar clase a las cartas para modo claro
-    cartas.forEach(carta => {
+    cartas.forEach((carta) => {
       carta.classList.remove("modo-oscuro");
       carta.classList.add("modo-claro");
     });
   }
 }
 
-
 // Acción al cargar la página
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener("DOMContentLoaded", function () {
   // Verifica si el modo guardado es 'oscuro' y lo aplica
   const modoGuardado = localStorage.getItem("modo");
   const botonModo = document.getElementById("cambiarModo");
@@ -136,12 +144,12 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Agregar evento al botón para cambiar el modo
-  botonModo.addEventListener('click', function() {
+  botonModo.addEventListener("click", function () {
     alternarModo();
   });
 
   // Recupera los productos guardados en el carrito del localStorage y los muestra
-  const productosEnCarrito = localStorage.getItem('productosEnCarrito');
+  const productosEnCarrito = localStorage.getItem("productosEnCarrito");
   if (productosEnCarrito) {
     allProducts = JSON.parse(productosEnCarrito);
     showHTML();
@@ -149,34 +157,37 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // Seleccionar elementos del carrito y otros elementos de interés
-const btnCart = document.querySelector('.container-cart-icon');
-const containerCartProducts = document.querySelector('.container-cart-products');
+const btnCart = document.querySelector(".container-cart-icon");
+const containerCartProducts = document.querySelector(
+  ".container-cart-products"
+);
 
 // Mostrar/ocultar el carrito al hacer clic en el ícono del carrito
-btnCart.addEventListener('click', () => {
-  containerCartProducts.classList.toggle('hidden-cart');
+btnCart.addEventListener("click", () => {
+  containerCartProducts.classList.toggle("hidden-cart");
 });
 
 // Variables para controlar el carrito de compras
-const cartInfo = document.querySelector('.cart-product');
-const rowProduct = document.querySelector('.row-product');
-const productsList = document.querySelector('#container-dbz');
+const cartInfo = document.querySelector(".cart-product");
+const rowProduct = document.querySelector(".row-product");
+const productsList = document.querySelector("#container-dbz");
 let allProducts = []; // Lista de todos los productos en el carrito
 
 // Variables para mostrar información del carrito
-const valorTotal = document.querySelector('.total-pagar');
-const countProducts = document.querySelector('#contador-productos');
-const cartEmpty = document.querySelector('.cart-empty');
-const cartTotal = document.querySelector('.cart-total');
-
+const valorTotal = document.querySelector(".total-pagar");
+const countProducts = document.querySelector("#contador-productos");
+const cartEmpty = document.querySelector(".cart-empty");
+const cartTotal = document.querySelector(".cart-total");
 
 // Agregar productos al carrito al hacer clic en los botones de precio de los productos
-productsList.addEventListener('click', (e) => {
-  if (e.target.classList.contains('boton-precio')) {
+productsList.addEventListener("click", (e) => {
+  if (e.target.classList.contains("boton-precio")) {
     // Obtener información del producto seleccionado
-    const product = e.target.closest('.card');
-    const title = product.querySelector('.titulo-carta').textContent;
-    const price = parseFloat(product.querySelector('.boton-precio').textContent.slice(1));
+    const product = e.target.closest(".card");
+    const title = product.querySelector(".titulo-carta").textContent;
+    const price = parseFloat(
+      product.querySelector(".boton-precio").textContent.slice(1)
+    );
 
     // Crear objeto con la información del producto
     const infoProduct = {
@@ -199,18 +210,18 @@ productsList.addEventListener('click', (e) => {
       Toastify({
         text: `¡"${title}" se ha agregado al carrito!`,
         duration: 3000,
-        gravity: 'bottom',
-        position: 'right',
-        backgroundColor: '#28a745',
+        gravity: "bottom",
+        position: "right",
+        backgroundColor: "#28a745",
       }).showToast();
     } else {
       allProducts.push(infoProduct);
       Toastify({
         text: `¡"${title}" se ha agregado al carrito!`,
         duration: 3000,
-        gravity: 'bottom',
-        position: 'right',
-        backgroundColor: '#28a745',
+        gravity: "bottom",
+        position: "right",
+        backgroundColor: "#28a745",
       }).showToast();
     }
 
@@ -221,32 +232,30 @@ productsList.addEventListener('click', (e) => {
 });
 
 // Actualizar la cantidad de productos en el carrito al interactuar con él
-rowProduct.addEventListener('click', (e) => {
-  if (e.target.classList.contains('remove-product')) {
+rowProduct.addEventListener("click", (e) => {
+  if (e.target.classList.contains("remove-product")) {
     // Reducir la cantidad de un producto en el carrito
     const product = e.target.parentElement;
-    const title = product.querySelector('.titulo-producto-carrito').textContent;
+    const title = product.querySelector(".titulo-producto-carrito").textContent;
     allProducts = allProducts.map((prod) => {
       if (prod.title === title && prod.quantity > 1) {
         prod.quantity--;
         Toastify({
           text: `¡Se ha eliminado una unidad de "${title}" del carrito!`,
           duration: 3000,
-          gravity: 'bottom',
-          position: 'right',
-          backgroundColor: '#dc3545',
+          gravity: "bottom",
+          position: "right",
+          backgroundColor: "#dc3545",
         }).showToast();
       }
       return prod;
     });
     showHTML();
     guardarCarritoEnLocalStorage();
-
-    
-  } else if (e.target.classList.contains('add-product')) {
+  } else if (e.target.classList.contains("add-product")) {
     // Aumentar la cantidad de un producto en el carrito
     const product = e.target.parentElement;
-    const title = product.querySelector('.titulo-producto-carrito').textContent;
+    const title = product.querySelector(".titulo-producto-carrito").textContent;
     allProducts = allProducts.map((prod) => {
       if (prod.title === title) {
         prod.quantity++;
@@ -259,14 +268,14 @@ rowProduct.addEventListener('click', (e) => {
     Toastify({
       text: `¡"${title}" se ha agregado al carrito!`,
       duration: 3000,
-      gravity: 'bottom',
-      position: 'right',
-      backgroundColor: '#28a745',
+      gravity: "bottom",
+      position: "right",
+      backgroundColor: "#28a745",
     }).showToast();
-  } else if (e.target.classList.contains('icon-close')) {
+  } else if (e.target.classList.contains("icon-close")) {
     // Eliminar un producto del carrito
     const product = e.target.parentElement;
-    const title = product.querySelector('.titulo-producto-carrito').textContent;
+    const title = product.querySelector(".titulo-producto-carrito").textContent;
     allProducts = allProducts.filter((prod) => prod.title !== title);
     showHTML();
     guardarCarritoEnLocalStorage();
@@ -274,32 +283,32 @@ rowProduct.addEventListener('click', (e) => {
 });
 // Función para guardar los productos del carrito en el almacenamiento local
 function guardarCarritoEnLocalStorage() {
-  localStorage.setItem('productosEnCarrito', JSON.stringify(allProducts));
+  localStorage.setItem("productosEnCarrito", JSON.stringify(allProducts));
 }
 
 // Función para mostrar los productos y la información en el carrito
 function showHTML() {
   if (!allProducts.length) {
     // Mostrar o ocultar elementos si el carrito está vacío o tiene productos
-    cartEmpty.classList.remove('hidden');
-    rowProduct.classList.add('hidden');
-    cartTotal.classList.add('hidden');
+    cartEmpty.classList.remove("hidden");
+    rowProduct.classList.add("hidden");
+    cartTotal.classList.add("hidden");
   } else {
-    cartEmpty.classList.add('hidden');
-    rowProduct.classList.remove('hidden');
-    cartTotal.classList.remove('hidden');
+    cartEmpty.classList.add("hidden");
+    rowProduct.classList.remove("hidden");
+    cartTotal.classList.remove("hidden");
   }
 
   // Limpiar el carrito antes de mostrar los productos
-  rowProduct.innerHTML = '';
+  rowProduct.innerHTML = "";
 
   let total = 0;
   let totalOfProducts = 0;
 
   // Mostrar cada producto en el carrito
   allProducts.forEach((product) => {
-    const containerProduct = document.createElement('div');
-    containerProduct.classList.add('cart-product');
+    const containerProduct = document.createElement("div");
+    containerProduct.classList.add("cart-product");
 
     containerProduct.innerHTML = `
       <div class="info-cart-product">
@@ -325,22 +334,25 @@ function showHTML() {
   countProducts.innerText = totalOfProducts;
 }
 
-
-
 // Función para abrir el modal de tarjeta
 function realizarPagoConTarjeta() {
   // Obtener datos del formulario
-  const numeroTarjeta = document.getElementById('numeroTarjeta').value;
-  const nombreTitular = document.getElementById('nombreTitular').value;
-  const fechaExpiracion = document.getElementById('fechaExpiracion').value;
-  const codigoSeguridad = document.getElementById('codigoSeguridad').value;
+  const numeroTarjeta = document.getElementById("numeroTarjeta").value;
+  const nombreTitular = document.getElementById("nombreTitular").value;
+  const fechaExpiracion = document.getElementById("fechaExpiracion").value;
+  const codigoSeguridad = document.getElementById("codigoSeguridad").value;
 
   // Validar datos (aquí debes agregar tus propias condiciones de validación)
-  if (!numeroTarjeta || !nombreTitular || !fechaExpiracion || !codigoSeguridad) {
+  if (
+    !numeroTarjeta ||
+    !nombreTitular ||
+    !fechaExpiracion ||
+    !codigoSeguridad
+  ) {
     Swal.fire({
-      icon: 'error',
-      title: 'Error',
-      text: 'Por favor, complete todos los campos del formulario',
+      icon: "error",
+      title: "Error",
+      text: "Por favor, complete todos los campos del formulario",
     });
     return;
   }
@@ -348,14 +360,14 @@ function realizarPagoConTarjeta() {
   // Aquí puedes agregar lógica adicional para procesar el pago
 
   // Después de realizar el pago, agrega la clase al formulario
-  const formTarjeta = document.getElementById('formTarjeta');
-  formTarjeta.classList.add('formulario-pagado');
+  const formTarjeta = document.getElementById("formTarjeta");
+  formTarjeta.classList.add("formulario-pagado");
 
   // Muestra una alerta de éxito
   Swal.fire({
-    icon: 'success',
-    title: 'Pago realizado con éxito',
-    text: 'Gracias por tu compra',
+    icon: "success",
+    title: "Pago realizado con éxito",
+    text: "Gracias por tu compra",
   });
 
   // Cierra el modal después de realizar el pago (si es necesario)
@@ -363,19 +375,19 @@ function realizarPagoConTarjeta() {
 }
 
 // Evento al hacer clic en el botón de pagar
-document.querySelector('.btn-pagar').addEventListener('click', () => {
+document.querySelector(".btn-pagar").addEventListener("click", () => {
   // Aquí puedes abrir el modal de la tarjeta antes de realizar el pago
   abrirModalTarjeta();
 });
 
 // Función para abrir el modal de la tarjeta
 function abrirModalTarjeta() {
-  const modalTarjeta = document.getElementById('modalTarjeta');
-  modalTarjeta.style.display = 'block';
+  const modalTarjeta = document.getElementById("modalTarjeta");
+  modalTarjeta.style.display = "block";
 }
 
 // Función para cerrar el modal de la tarjeta
 function cerrarModalTarjeta() {
-  const modalTarjeta = document.getElementById('modalTarjeta');
-  modalTarjeta.style.display = 'none';
+  const modalTarjeta = document.getElementById("modalTarjeta");
+  modalTarjeta.style.display = "none";
 }

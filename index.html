@@ -20,9 +20,11 @@
 
         <nav class="navbar navbar-expand-lg navbar-light-mode">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img class="logo" src="https://es.dragon-ball-official.com/static/common/team/es/team_icon_03.png"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="#"><img class="logo"
+                        src="https://es.dragon-ball-official.com/static/common/team/es/team_icon_03.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -37,9 +39,10 @@
                             <button id="cambiarModo" class="nav-link active">Modo Oscuro</button>
                         </li>
                     </ul>
-        
+
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" id="searchInput" placeholder="numero de carta , personaje o titulo" oninput="buscar()">
+                        <input type="text" class="form-control" id="searchInput"
+                            placeholder="numero de carta , personaje o titulo" oninput="buscar()">
                         <div class="input-group-append">
                             <button class="btn btn-outline-secondary bg-danger text-white" type="button"
                                 onclick="resetBuscar()">Limpiar</button>
@@ -47,8 +50,8 @@
                     </div>
                     <div class="container-icon">
                         <div class="container-cart-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bag"
-                                viewBox="0 0 16 16">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="bi bi-bag" viewBox="0 0 16 16">
                                 <path
                                     d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
                             </svg>
@@ -56,7 +59,7 @@
                                 <span id="contador-productos">0</span>
                             </div>
                         </div>
-        
+
                         <div class="container-cart-products hidden-cart">
                             <div class="row-product hidden">
                                 <div class="cart-product">
@@ -68,7 +71,7 @@
                                     </div>
                                 </div>
                             </div>
-        
+
                             <div class="cart-total hidden">
                                 <h3>Total: <span class="total-pagar">$0</span></h3>
                                 <button class="btn-pagar" onclick="realizarPago()">Pagar</button>
@@ -82,30 +85,30 @@
                                 <form id="formTarjeta">
                                     <label for="numeroTarjeta">Número de tarjeta:</label>
                                     <input type="text" id="numeroTarjeta" required>
-                        
+
                                     <label for="nombreTitular">Nombre del titular:</label>
                                     <input type="text" id="nombreTitular" required>
-                        
+
                                     <label for="fechaExpiracion">Fecha de expiración:</label>
                                     <input type="text" id="fechaExpiracion" placeholder="MM/AA" required>
-                        
+
                                     <label for="codigoSeguridad">Código de seguridad:</label>
                                     <input type="text" id="codigoSeguridad" required>
-                        
+
                                     <button type="button" onclick="realizarPagoConTarjeta()">Pagar</button>
                                 </form>
                             </div>
                         </div>
-                        
+
                         </form>
-                            </div>
-                          </div>
                     </div>
                 </div>
-                <div></div>
             </div>
-        </nav>
-        
+    </div>
+    <div></div>
+    </div>
+    </nav>
+
 
 
     </div>
@@ -114,7 +117,7 @@
 
         </div>
         <div id="container-dbz">
-            
+
         </div>
         </section>
 
@@ -157,7 +160,7 @@
     </div>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-   
+
     <script src="js/main.js"></script>
 </body>
 
