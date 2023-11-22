@@ -303,7 +303,7 @@
         {
             "id": 24,
             "title": "cell el implacable",
-            "price": 70,
+            "price": 92,
             "description": "cell no dudara en destruir a quien sea necesario para absorber su energia y hacerse asi mas poderoso",
             "category": "androide",
             "personaje":"cell",
@@ -316,7 +316,7 @@
         {
             "id": 25,
             "title": "premonicion",
-            "price": 70,
+            "price": 86,
             "description": "tu contricante esta obligado a mostrarte su mano",
             "category": "guerrero z",
             "personaje":"vegeta",
@@ -329,7 +329,7 @@
         {
             "id": 26,
             "title": "campo de energia",
-            "price": 70,
+            "price": 91,
             "description": "la energia puede ser utilizada de muchas manera. el campo de energia, aunque no genera mcuho daño suele ser efectivo",
             "category": "guerrero z",
             "personaje":"trunks",
@@ -342,7 +342,7 @@
         {
             "id": 27,
             "title": "super ataque",
-            "price": 70,
+            "price": 100,
             "description": "modfica la potencia de una carta en +0 +40",
             "category": "hechizo rapido",
             "personaje": null,
@@ -355,7 +355,7 @@
         {
             "id": 28,
             "title": "descarga de energia",
-            "price": 70,
+            "price": 100,
             "description": "modfica la potencia de una carta en +0 +40",
             "category": "guerrero z",
             "personaje": "vegeta",
@@ -368,7 +368,7 @@
         {
             "id": 29,
             "title": "super ataque",
-            "price": 70,
+            "price": 80,
             "description": "modfica la potencia de una carta en +20 +0",
             "category": "hechizo rapido",
             "personaje": "cell",
@@ -381,7 +381,7 @@
         {
             "id": 30,
             "title": "mister satan",
-            "price": 70,
+            "price": 40,
             "description": "en la tierra de todos piensa que mister satan es un verdadero hero y un gran guerrero",
             "category": "humano",
             "personaje": "mister satan",
@@ -394,7 +394,7 @@
         {
             "id": 31,
             "title": "la magia del dragon",
-            "price": 70,
+            "price": 67,
             "description": "recupera 20 puntos de energia sin superar el maximo del contador",
             "category": "hechizo",
             "personaje": "dende",
@@ -407,7 +407,7 @@
         {
             "id": 32,
             "title": "gohan",
-            "price": 70,
+            "price": 55,
             "description": "entrenado por pikoro , gohan se transforma rapidamente en un gran guerrero saiyan",
             "category": "guerrero z",
             "personaje": "gohan",
@@ -420,7 +420,7 @@
         {
             "id": 33,
             "title": "vegeta super saiyan",
-            "price": 70,
+            "price": 98,
             "description": "vegeta lucha interminadamente entre el bien y el mal es uno de los mas poderosos personajes de la saga",
             "category": "guerrero z",
             "personaje": "vegeta",
@@ -433,7 +433,7 @@
         {
             "id": 34,
             "title": "explosion de energia",
-            "price": 70,
+            "price": 85,
             "description": "la ira de goku ha generado una terrible explosion de energia",
             "category": "guerrero z",
             "personaje": "goku",
@@ -446,7 +446,7 @@
         {
             "id": 35,
             "title": "neutralizacion",
-            "price": 70,
+            "price": 110,
             "description": "el ataque de tu contricante no te hace ningun daño no sirve contra el ataque de las esferas",
             "category": "hechizo rapido",
             "personaje": "goku",
@@ -459,7 +459,7 @@
         {
             "id": 36,
             "title": "trunks",
-            "price": 70,
+            "price": 80,
             "description": "trunks viene de un futuro alternativo , donde la tierra ha sufrido terribles acontecimientos",
             "category": "guerrero z",
             "personaje": "trunks",
@@ -472,7 +472,7 @@
         {
             "id": 37,
             "title": "goku y sus amigos",
-            "price": 70,
+            "price": 100,
             "description": "cuando las cosas se ponen dificiles lo mejor es unir fuerza",
             "category": "guerrero z",
             "personaje": "guerrero z",
@@ -485,7 +485,7 @@
         {
             "id": 38,
             "title": "destruccion",
-            "price": 70,
+            "price": 40,
             "description": "tu contricante esta obligado a mostrarte su mano y descartar todas las esferas que tenga",
             "category": "guerrero z",
             "personaje": "goku",
@@ -498,7 +498,7 @@
         {
             "id": 39,
             "title": "lucha de coloso",
-            "price": 70,
+            "price": 68,
             "description": "goku y cell se enfrentan en una batalla sin igual",
             "category": "guerrero z",
             "personaje": null,
@@ -511,7 +511,7 @@
         {
             "id": 40,
             "title": "kame hame ha nivel 2",
-            "price": 70,
+            "price": 115,
             "description": "esta es una de las mas potente tecnica utilizada por goku y su familia",
             "category": "guerrero z",
             "personaje": "goku",
@@ -524,7 +524,7 @@
         {
             "id": 41,
             "title": "embestida",
-            "price": 70,
+            "price": 91,
             "description": "este ataque no puede ser bloqueado",
             "category": "guerrero z",
             "personaje": "gohan",
@@ -537,7 +537,7 @@
         {
             "id": 42,
             "title": "gohan super saiyan",
-            "price": 70,
+            "price": 200,
             "description": "el poderoso gohan alcanzo el nivel de super saiyan a corta edad para sorpresa de goku y vegeta",
             "category": "guerrero z",
             "personaje": "gohan",
@@ -550,7 +550,7 @@
         {
             "id": 43,
             "title": "el poder de shenron",
-            "price": 70,
+            "price": 63,
             "description": "busca en tu pila de descarte una carta de ataque que quieras volver a tu mano y luego descarta otra",
             "category": "shenron",
             "personaje": "shenron",
@@ -563,7 +563,7 @@
         {
             "id": 44,
             "title": "yamcha",
-            "price": 70,
+            "price": 52,
             "description": "aunque no tengo los poderes de un saiyan , yamcha es una guerrero muy valiente y leal a sus amigos",
             "category": "humano",
             "personaje": "yamcha",
@@ -602,7 +602,7 @@
         {
             "id": 47,
             "title": "golpe de gracia",
-            "price": 70,
+            "price": 69,
             "description": "tras una dura pelea , goku se despide de su derrotado adversario",
             "category": "guerrero z",
             "personaje": "gohan",
@@ -615,7 +615,7 @@
         {
             "id": 48,
             "title": "knock our",
-            "price": 70,
+            "price": 80,
             "description": "descarta hasta 6 cartas de tu mano y roba de tu mazo la misma cantidad , no puedes atacar en este turno",
             "category": "hechizo",
             "personaje": null,
@@ -628,7 +628,7 @@
         {
             "id": 49,
             "title": "rayos de energia",
-            "price": 70,
+            "price": 50,
             "description": "vegeta lanza un terrible ataque utilizando su energia",
             "category": "guerrero z",
             "personaje": "vegeta",
@@ -641,7 +641,7 @@
         {
             "id": 50,
             "title": "compartir esfera",
-            "price": 70,
+            "price": 120,
             "description": "gracias a esta carta , puedes bajar cualquier ataque (solo 1) sin necesidad de gastar otra esfera",
             "category": "hechizo",
             "personaje": null,
@@ -667,7 +667,7 @@
         {
             "id": 52,
             "title": "defensa superior",
-            "price": 70,
+            "price": 90,
             "description": "modfica la potencia de una carta en +20 +0",
             "category": "guerrero z",
             "personaje": "goku",
